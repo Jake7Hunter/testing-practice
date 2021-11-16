@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function product(num1, num2) {
+function product(num1 = 0, num2 = 1) {
   return num1 * num2;
 
 }
@@ -35,6 +35,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+  var result = product(2);
+  if (result !== 2) throw new Error('Expected product(2) to be 2. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
